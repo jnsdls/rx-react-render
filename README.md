@@ -1,4 +1,4 @@
-# &lt;RxReactRender /&gt; [![npm][npm]][npm-url] [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/jnsdls/rx-react-render.svg?branch=master)](https://travis-ci.com/jnsdls/rx-react-render)
+# &lt;RxReactRender /&gt; [![npm][npm]][npm-url] [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.com/jnsdls/rx-react-render.svg?branch=master)](https://travis-ci.com/jnsdls/rx-react-render) [![Coverage Status](https://coveralls.io/repos/github/jnsdls/rx-react-render/badge.svg?branch=master)](https://coveralls.io/github/jnsdls/rx-react-render?branch=master)
 
 A rxjs observable -> render function component for React.
 
