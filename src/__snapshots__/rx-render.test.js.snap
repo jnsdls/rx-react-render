@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RxReactRender /> handles any type of prop 1`] = `
+<div>
+  Observable: 
+  this is just one thing
+   - Not An Observable: 
+  just a string
+</div>
+`;
+
+exports[`<RxReactRender /> handles any type of prop 2`] = `
+<div>
+  Observable: 
+  the next thing
+   - Not An Observable: 
+  just a string
+</div>
+`;
+
+exports[`<RxReactRender /> with non-observable props it renders with the props passed through 1`] = `
+<div>
+  DefinitelyNotAnObservable
+</div>
+`;
+
+exports[`<RxReactRender /> with observable props it renders with the values passed through 1`] = `
+<div>
+  Observable: 
+  this is just one thing
+</div>
+`;
+
+exports[`<RxReactRender /> with observable props it renders with the values passed through and updates work 1`] = `
+<div>
+  Observable: 
+  this is just one thing
+</div>
+`;
+
+exports[`<RxReactRender /> with observable props it renders with the values passed through and updates work 2`] = `
+<div>
+  Observable: 
+  the next thing
+</div>
+`;
+
+exports[`<RxReactRender /> without props it renders the contents 1`] = `
+<div>
+  No Props
+</div>
+`;

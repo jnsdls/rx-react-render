@@ -6,25 +6,27 @@ import { Observable } from 'rxjs';
  *
  *
  * @export
- * @class RxRender
+ * @class RxReactRender
  * @extends {PureComponent}
  *
  * this component turns observables passed to it into state with the same keys
  * example:
  * timer$ is an interval observable that increments by 1 every second
- * <RxRender timer={timer$}>{({ timer }) => <div>Interval: {timer}s</div>}</RxRender>
+ * <RxReactRender timer={timer$}>{({ timer }) => <div>Interval: {timer}s</div>}</RxReactRender>
  * this will render a div that updates the text inside every second: "Interval: [1,2,3,4,...]s"
  *
  */
-export default class RxRender extends PureComponent {
+export default class RxReactRender extends PureComponent {
   static propTypes = {
-    children: PropTypes.func.required
+    children: PropTypes.func.isRequired
   };
   state = {};
   subs = [];
   componentDidMount() {
     const observables = this.getObservableProps(this.props);
-    this.subs = Object.keys(ob => observables[ob].subscribe(val => this.setState({ [ob]: val })));
+    this.subs = Object.keys(observables).map(ob =>
+      observables[ob].subscribe(val => this.setState({ [ob]: val }))
+    );
   }
   componentWillUnmount() {
     this.subs.forEach(sub => sub.unsubscribe());
@@ -43,7 +45,7 @@ export default class RxRender extends PureComponent {
   getNonObservableProps = props => {
     const nonObservable = {};
     Object.keys(props).forEach(key => {
-      if (!props[key] instanceof Observable) {
+      if (!(props[key] instanceof Observable)) {
         nonObservable[key] = props[key];
       }
     });
