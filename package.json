@@ -1,6 +1,6 @@
 {
   "name": "@jnsdls/rx-react-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn observable props into a render function with values.",
   "main": "dist/rx-react-render.cjs.js",
   "module": "dist/rx-react-render.esm.js",
