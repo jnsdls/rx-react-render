@@ -6,7 +6,6 @@ A rxjs observable -> render function component for React.
 - [Motivation](#motivation)
 - [Examples](#examples)
 - [Props](#props)
-- [Helpers](#helpers)
 - [License](#license)
 
 ## Getting Started
