@@ -47,7 +47,7 @@
     "rollup-plugin-babel": "3.0.7",
     "rollup-plugin-commonjs": "9.1.8",
     "rollup-plugin-node-resolve": "3.4.0",
-    "rxjs": "6.3.2"
+    "rxjs": "6.3.3"
   },
   "peerDependencies": {
     "react": "^16.4.2",
